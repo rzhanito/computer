@@ -5,6 +5,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+   <link href="fonts/Roboto/Roboto-Light.ttf" rel="stylesheet">
+   <link href="fonts/Roboto/Roboto-Bold.ttf" rel="stylesheet">
+   CSS rules to specify f
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <script src="js/main.js" defer></script>
@@ -12,19 +16,17 @@
 </head>
 
 <body>
+
    <header class="header">
       <div class="header__wrap">
          <a href="#" class="header__logo">
             <img src="img/logo.svg" alt="site-logo"></a>
-         <div class="header__menu">
-            <nav class="header__links">
-               <a href="#">Чем занимаемся</a>
-               <a href="#">Процесс работы</a>
-               <a href="#">Команда</a>
-            </nav>
-            <button type="button" class="button header__button">Оставить заявку</button>
-         </div>
-         <!-- /.header__menu -->
+         <nav class="header__links">
+            <a href="#">Чем занимаемся</a>
+            <a href="#">Процесс работы</a>
+            <a href="#">Команда</a>
+         </nav>
+         <button type="button" class="button header__button">Оставить заявку</button>
       </div>
       <!-- /.header__wrap -->
    </header>
@@ -54,12 +56,73 @@
             </div>
             <button class="button">Оставить заявку</button>
          </div>
+         <div class="main-display-background">
+            <img src="img/header-background.png" alt="header-background">
+         </div>
+         <!-- /.main-display-background -->
       </section>
       <!-- /.main-display -->
-      <div class="main-display-background">
-         <img src="img/header-background.png" alt="header-background">
-      </div>
-      <!-- /.main-display-background -->
+
+      <section class="work">
+         <div class="container">
+            <div class="work__wrapper">
+               <div class="work__img">
+                  <img src="img/about.png" alt="about us photo">
+               </div>
+               <div class="work__text">
+                  <h2 class="work-title">Чем мы занимаемся</h2>
+                  <p class="work-description">Помогаем сэкономить до 40% стоимости игрового компьютера без потери
+                     производительности. Подбираем мощные детали компьютера, заказываем у своих поставщиков или напрямую
+                     у
+                     производителей, чтобы сэкономить ваши деньги. Собираем мощный компьютер, на котором можно играть в
+                     любые современные игры и заниматься работой.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /.work -->
+
+      <section class="process">
+         <div class="container">
+            <div class="process-wrap">
+               <div class="process-header">
+                  <div class="process-img">
+                     <img src="img/icon-45.svg" alt="process 45 degrees">
+                  </div>
+                  <h2 class="process-title">Процесс работы</h2>
+               </div>
+               <div class="process-description">Подробно рассказываем о том, как происходит сборка, от заявки до
+                  выдачи
+                  вашего заказа</div>
+
+               <div class="process-cards">
+                  <div class="process-cards-item">
+                     <h3 class="card-item-title">Заявка</h3>
+                     <p class="card-item-description">Мы получаем вашу заявку, связываемся с вами для уточнения деталей,
+                        чтобы понять ваши ожидания от будущего компьютера.</p>
+                  </div>
+                  <div class="process-cards-item">
+                     <h3 class="card-item-title">Подбор</h3>
+                     <p class="card-item-description">После оплаты подбираем комплектующие, которые дадут максимальную
+                        производительность. Заказываем их напрямую у поставщиков.</p>
+                  </div>
+                  <div class="process-cards-item">
+                     <h3 class="card-item-title">Сборка</h3>
+                     <p class="card-item-description">Собираем компьютер, проводим стартовую диагностику, устанавливаем
+                        операционную систему и необходимые драйверы для работы.</p>
+                  </div>
+                  <div class="process-cards-item">
+                     <h3 class="card-item-title">Выдача</h3>
+                     <p class="card-item-description">Отдаём компьютер вам в назначенный срок, проводим вместе
+                        тестирование, подписываем документы о выполнении работы и гарантии.</p>
+                  </div>
+               </div>
+               <!-- /.process-cards -->
+            </div>
+            <!-- /.process-wrap -->
+         </div>
+      </section>
+      <!-- /.process -->
    </main>
    <!-- /.main -->
 </body>
