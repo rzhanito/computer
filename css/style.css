@@ -50,7 +50,11 @@ h6 {
   width: 130rem;
   margin: 0 auto;
 }
+/* style reset end  */
 
+:root {
+  --text-size-medium: 1.6rem;
+}
 /* header start */
 .header {
   position: absolute;
@@ -75,13 +79,13 @@ h6 {
   margin-right: 7.1rem;
 }
 .header__links a {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   color: #fff;
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
   font-weight: 700;
@@ -95,7 +99,9 @@ h6 {
 
 /* 
 /* header end */
-
+.main {
+  padding-bottom: 24.4rem;
+}
 /* section-display start */
 .main-display .container {
   position: relative;
@@ -135,7 +141,7 @@ h6 {
 }
 .timer__text {
   opacity: 0.4;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 140%;
 }
 .main-display-background {
@@ -172,7 +178,7 @@ h6 {
   margin-bottom: 4.5rem;
 }
 .work-description {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 
@@ -181,6 +187,7 @@ h6 {
 /* section process  start*/
 .process {
   position: relative;
+  padding-bottom: 20rem;
 }
 .process-header {
   display: flex;
@@ -198,7 +205,7 @@ h6 {
   margin-bottom: 4.9rem;
 }
 .process-description {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   opacity: 0.5;
   max-width: 41.1rem;
@@ -239,3 +246,100 @@ h6 {
 }
 
 /* process cards end */
+
+/* process team start */
+
+.team .process-img {
+  transform: rotate(-45deg);
+}
+.team-wrap {
+  display: flex;
+  padding-bottom: 20rem;
+  justify-content: space-between;
+}
+.team-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+.item-img {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+.item-name {
+  font-size: 2.4rem;
+  line-height: 140%;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.item-profession {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
+.team .process-header {
+  margin-bottom: 11rem;
+}
+.team .process-title {
+  margin: 0;
+}
+.team .button {
+  background: transparent;
+  border: 0.1rem solid #fff;
+}
+.item-link {
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+}
+
+/* process team end */
+
+/* section buy start */
+
+.buy-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy-title {
+  font-size: 4.8rem;
+  line-height: 140%;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.buy-description {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 4.5rem;
+}
+.buy .button {
+  margin-bottom: 4rem;
+  width: fit-content;
+}
+.buy-social {
+  display: flex;
+}
+.social-item {
+  width: 5rem;
+  height: 5rem;
+  padding: 1.8rem 1.3rem;
+  border-radius: 50%;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.social-item:not(:last-child) {
+  margin-right: 3rem;
+}
+.social-item img {
+  width: 2.4rem;
+  height: 1.37rem;
+}
+
+/* section buy end */
